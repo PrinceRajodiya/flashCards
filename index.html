@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body onload="displayNewFlashCards()">
+
+    <!-- Main Container -->
+    <div class="container" id="container">
+
+        <!-- Flash Card Button -->
+
+        <div class="add-flashcard-button" id="add-flashcard-button">
+            <button class="add-fc-btn" onclick="addNewFlashCard()">
+                Add FlashCard
+            </button>
+        </div>
+
+        <!-- New FlashCard Creation Box -->
+        <div class="new-card-container" id="new-card-container">
+
+            <!-- Header -->
+            <h2>
+                New FlashCard
+            </h2>
+
+            <!-- Error Message -->
+            <div class="error-container" id="error-container">
+                <p class="error-msg" id="error-msg">
+
+                </p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!-- Close Button -->
+            <div class="close-button" id="close-button">
+                <button class="close-btn" id="close-btn" onclick="closeNewFlashCard()">
+                    Close
+                </button>
+            </div>
+
+            <!-- Question Field -->
+            <div class="question" id="question">
+
+                <label class="question-label" id="question-label">
+                    Question : 
+                </label>
+                <br>
+
+                <input type="text" placeholder="Type your Question Here..." id="question-content" class="question-content">
+
+            </div>
+
+            <!-- Answer Field -->
+            <div class="answer" id="answer">
+
+                <label class="answer-label" id="answer-label">
+                    Answer :
+                </label>
+                <br>
+
+                <input type="text" placeholder="Your Answer goes here..." id="answer-content" class="answer-content">
+
+            </div>
+
+            <!-- SAVE Button -->
+            <div class="save-btn" id="save-btn">
+                <button class="save-card" id="save-card" onclick="createNewFlashCard()">
+                    Save
+                </button>
+            </div>
+        </div>
+
+        <div class="card-list" id="card-list">
+        </div>
+
+        <!-- Generate FlashCards
+        <div class="flashcards" id="flashcards">
+            
+            <div class="card-list" id="card-list">
+            </div>
+
+            </div>
+            <div class="questionPart">
+                <p class="questionData" id="questionData">
+                    
+                </p>
+            </div>
+            <div class="answerPart">
+                <p class="answerData" id="answerData">
+                    
+                </p>
+            </div>
+        </div> -->
+
+
+    </div>
+</body>
+</html>
